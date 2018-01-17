@@ -1,5 +1,13 @@
 ## DevvitIO's CMS. Woaaah
 
+Needs PHP 7.1. Use composer install to get all the packages. 
+
+And then run 
+```
+php artisan serve
+```
+
+To get rollin'
 
 Some basic doc links for y'all:
 
