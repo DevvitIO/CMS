@@ -1,0 +1,48 @@
+/*********** HEADER **********/
+
+.header-top {
+	background: #333333;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	padding-left: 25px;
+	text-transform: uppercase;
+}
+
+.tagline {
+	font-size: 12px;
+}
+
+.logo {
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.logo-io {
+	font-size: 16px;
+	font-family: 'Arial';
+	font-weight: bold;
+	letter-spacing: 0;
+}
+
+.authorization {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 0;
+}
+
+.authorization li {
+	display: inline-block;
+	padding: 0 25px;
+	margin: 0;
+	line-height: 75px;
+	font-size: 11px;
+}
+
+.authorization li:hover {
+	background: #00c8c8;
+}

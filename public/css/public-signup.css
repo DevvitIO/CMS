@@ -1,0 +1,111 @@
+/********** SIGNUP **********/
+
+.auth-container {
+	width: 572px;
+	margin: 220px auto 0;
+}
+
+.auth-block-header {
+	background: #333;
+	padding: 40px 60px 45px;
+}
+
+.auth-block-header-logo {
+	height: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.auth-block-header-heading {
+	font-size: 18px;
+	margin-top: 40px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+.auth-block-paragraph {
+	margin-top: 55px;
+	font-size: 12px;
+	color: #777777;
+	text-align: center;
+	line-height: 21px;
+}
+
+.auth-block-form {
+	background: #5b6c85;
+	padding-bottom: 50px;
+}
+
+.auth-action-list {
+	list-style-type: none;
+	display: flex;
+}
+
+.auth-action-list-item {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	flex: 1 1 auto;
+	text-align: center;
+	padding: 25px 0;
+	font-weight: 500;
+	border-left: 1px solid #5b6c85;
+	border-right: 1px solid #5b6c85;
+	cursor: pointer;
+}
+
+.auth-action-list-item-active {
+	color: #c14646;
+	font-weight: 700;
+	background: #fff;
+	border-bottom: 3px solid #f75c5c;
+}
+
+.signup-form {
+	padding: 0 93px;
+	margin-top: 55px;
+}
+
+.signup-form-disabled {
+	display: none;
+}
+
+.signup-form-input,
+.signup-form-submit-btn {
+	padding: 20px;
+	width: 100%;
+	font-weight: 500;
+}
+
+.signup-form-input {
+	font-size: 12px;
+	letter-spacing: 3px;
+	color: #454647;
+	margin-bottom: 23px;
+}
+
+.signup-form-input::placeholder {
+	text-align: center;
+	color: rgba(69, 70, 71, 0.5);
+}
+
+.signup-form-submit-btn {
+	background: #f75c5c;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.signup-terms {
+	margin-top: 55px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	display: none;
+}
+
+.terms-link {
+	color: #f75c5c;
+}
