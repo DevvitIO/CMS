@@ -184,4 +184,6 @@
             </main>    
     </div>
 
+    @include('partials.public-footer')
+
 @endsection
