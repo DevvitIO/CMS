@@ -1,23 +1,18 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="{{ route('pub.index') }}">Devvit.IO</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<header class="header-top">
+        <div class="logo">Devvit <a href="index.php"><span class="logo-io">.io</span></a></div>
+        <div class="tagline">SOME. TAGLINE. HERE.</div>
+        <ul class="authorization">
+            <a href="signup.php"><li>Sign in</li></a>
+            <a href="signup.php"><li>Register</li></a>
+        </ul>
+    </header>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('admin.index') }}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-</div>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recent</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
