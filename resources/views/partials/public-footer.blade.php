@@ -7,3 +7,5 @@
             <li><a href="#">About</a></li>
         </ul>
 </footer>
+
+<script defer type="text/javascript" src="{{ URL::to('public/js/pub-scripts.js') }}"></script>
