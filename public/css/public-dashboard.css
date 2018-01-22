@@ -1,0 +1,158 @@
+/********** DASHBOARD **********/
+
+.main-nav {
+	margin-top: 112px;
+}
+
+.main-nav-list {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 13px;
+	list-style-type: none;
+	color: #727272;
+}
+
+.main-nav-list li {
+	padding-right: 25px;
+}
+
+.main-nav-list li:hover {
+	color: #00c8c8;
+}
+
+.top-entry-container {
+	height: 226px;
+	width: 586px;
+	display: flex;
+	margin: 95px auto 0;
+}
+
+.top-entry-image {
+	border: 1px solid #dad9d9;
+	width: 293px;
+	background-color: #f8f8f8;
+}
+
+.top-entry-info {
+	padding: 5px 0px 5px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 293px;
+}
+
+.top-entry-title {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #454647;
+}
+
+.top-entry-text {
+	margin-top: 20px;
+	color: #333333;
+	font-size: 12px;
+}
+
+.top-entry-author {
+	margin-top: 20px;
+	color: #333333;
+	font-size: 12px;
+}
+
+.top-entry-author-name {
+	color: #777777;
+}
+
+.top-entry-button {
+	padding: 16px 38px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 2px solid #333333;
+	display: inline-block;
+	margin-right: 17px;
+}
+
+.button-read {
+	background: #333333;
+	color: #fff;
+}
+
+.button-read:hover {
+	color: #fff;
+}
+
+.button-save {
+	background: #fff;
+	color: #333;
+}
+
+.button-save:hover {
+	color: #333;
+}
+
+.content-container {
+	width: 1136px;
+	margin: 0 auto;
+}
+
+.content-category-container {
+	margin-top: 85px;
+}
+
+.content-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px 14px;
+	font-size: 12px;
+	color: #9fa7ab;
+	border-bottom: 1px solid #ccc;
+}
+
+.content-header-category-link {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.post-preview-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-preview {
+	width: 243px;
+	margin-top: 35px;
+}
+
+.post-preview-image {
+	height: 179px;
+	border: 1px solid #dad9d9;
+	background-color: #f8f8f8;
+}
+
+.post-preview-title {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+.post-preview-text {
+	font-size: 10px;
+	margin-top: 15px;
+}
+
+.post-preview-buttons {
+	margin-top: 13px;
+}
+
+.post-preview-button {
+	padding: 6px 20px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 2px solid #333333;
+	display: inline-block;
+	margin-right: 12px;
+}

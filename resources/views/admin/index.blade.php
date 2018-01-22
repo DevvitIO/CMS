@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.admin-master')
 @section('content')
     @include('partials.admin-header')
     <div class="container-fluid">

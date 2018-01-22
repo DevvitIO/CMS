@@ -1,0 +1,23 @@
+/********** FOOTER **********/
+
+.main-footer {
+	color: #727272;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.footer-nav {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.footer-nav li {
+	margin-right: 25px;
+}
+
+.footer-logo {
+	margin: 0 40px;
+}
