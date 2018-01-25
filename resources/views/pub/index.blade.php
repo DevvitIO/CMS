@@ -184,6 +184,7 @@
             </main>    
     </div>
 
+    <script src="{{ asset('js/app.js') }}"></script>
     @include('partials.public-footer')
 
 @endsection
