@@ -11,15 +11,16 @@ li.each(function(){
 });
 
 
-
-$(document).ready(function () {
-               $("#sidebar").mCustomScrollbar({
+   $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
                 });
 
-			let sideBarStuff = $('#sidebar, #content')
+				let sideBarStuff = $('#sidebar, #content')
 
-			$('#sidebarCollapse').on('click', function () {
-			sideBarStuff.toggleClass('active');
-            $('.collapse.in').toggleClass('in');
-			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                $('#sidebarCollapse').on('click', function () {
+                    sideBarStuff.toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
