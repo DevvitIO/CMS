@@ -9,3 +9,4 @@
 </footer>
 
 <script defer type="text/javascript" src="{{ URL::to('js/pub-scripts.js') }}"></script>
+<script defer type="text/javascript" src="{{ URL::to('js/admin-scripts.js') }}"></script>
