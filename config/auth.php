@@ -14,10 +14,9 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
-    ],
-
+    'guard' => 'custom',
+    'passwords' => 'users',
+	],
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -35,17 +34,22 @@ return [
     |
     */
 
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
-        ],
+   'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
     ],
+ 
+    'api' => [
+        'driver' => 'token',
+        'provider' => 'users',
+    ],
+     
+    'custom' => [
+      'driver' => 'json',
+      'provider' => 'mongo',
+    ],
+	],
 
     /*
     |--------------------------------------------------------------------------
@@ -65,16 +69,19 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-        ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\User::class,
     ],
+    'mongo' => [
+        'driver' => 'mongo'
+    ],
+ 
+    // 'users' => [
+    //     'driver' => 'database',
+    //     'table' => 'users',
+    // ],
+	],
 
     /*
     |--------------------------------------------------------------------------
