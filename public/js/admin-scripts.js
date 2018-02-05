@@ -9,3 +9,20 @@ li.each(function(){
 		});
 	};
 });
+
+
+   $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+				let sideBarStuff = $('#sidebar, #content')
+				let collapseIn = $('.collapse.in')
+				let aria = $('a[aria-expanded=true]')
+
+                $('#sidebarCollapse').on('click', function () {
+                    sideBarStuff.toggleClass('active');
+                    collapseIn.toggleClass('in');
+                    aria.attr('aria-expanded', 'false');
+                });
+            });

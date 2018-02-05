@@ -2,6 +2,10 @@
 
 Needs PHP 7.1. Use composer install to get all the packages. 
 
+```
+composer install
+```
+
 And then run 
 ```
 php artisan serve

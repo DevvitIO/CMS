@@ -4,7 +4,7 @@
         <ul class="authorization">
             @guest
                 <a href="{{ route('login') }}"><li>Sign in</li></a>
-                <a href="{{ route('register') }}}"><li>Register</li></a>
+                <a href="{{ route('register') }}"><li>Register</li></a>
             @else
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
