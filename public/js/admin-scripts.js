@@ -17,10 +17,12 @@ li.each(function(){
                 });
 
 				let sideBarStuff = $('#sidebar, #content')
+				let collapseIn = $('.collapse.in')
+				let aria = $('a[aria-expanded=true]')
 
                 $('#sidebarCollapse').on('click', function () {
                     sideBarStuff.toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    collapseIn.toggleClass('in');
+                    aria.attr('aria-expanded', 'false');
                 });
             });
