@@ -35,7 +35,7 @@ Route::get('more', function () {
     return view('pub.more');
 })->name('pub.more');
 
-/*
+
 Route::group(['prefix' => 'admin'], function(){
 
     Route::get('dashboard', function() {
@@ -43,7 +43,8 @@ Route::group(['prefix' => 'admin'], function(){
     })->name('admin.index');
 
 });
-*/
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

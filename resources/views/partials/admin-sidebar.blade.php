@@ -15,7 +15,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Categories</a>
+                        <a href="./cateogires">Categories</a>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Archive</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="#">Page 1</a></li>
@@ -25,17 +25,17 @@
                     </li>
                     
                     <li>
-                        <a href="#">Plugins</a>
+                        <a href="./plugins">Plugins</a>
                     </li>
 					<li>
-                        <a href="#">Users</a>
+                        <a href="./users">Users</a>
                     </li>
 					<li>
-                        <a href="#">Settings</a>
+                        <a href="./settings">Settings</a>
                     </li>
                 </ul>
 
                 <ul class="list-unstyled CTAs">
-                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to blog</a></li>
+                    <li><a href="/" class="article">Back to blog</a></li>
                 </ul>
 </nav>
