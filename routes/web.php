@@ -42,6 +42,11 @@ Route::group(['prefix' => 'admin'], function(){
         return view('admin.index');
     })->name('admin.index');
 
+/*
+	Route::get('users', function() {
+        return view('admin.users');
+    })->name('admin.users'); */
+
 });
 
 
@@ -49,12 +54,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
     Route::get('/', 'AdminController@index');
     Route::get('/login', 'AdminLoginController@showLoginForm');
     Route::post('/login', 'AdminLoginController@login');
     Route::get('/logout', 'AdminLoginController@logout');
+
+	Route::get('users', 'UserController@index');
+	
+
 });
 
 
