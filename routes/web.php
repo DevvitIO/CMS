@@ -61,6 +61,36 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
     Route::get('/logout', 'AdminLoginController@logout');
 
 	Route::get('users', 'UserController@index');
+	Route::get('posts', 'PostController@index');
+
+
+
+
+
+
+
+
+/*
+ Route::get('posts', function () {
+        return view('posts', [
+            'posts' => Post::orderBy('created_at', 'asc')->get()
+        ]);
+    });
+
+*/
+
+	//NEW ONE
+	Route::get('create', 'PostController@createIndex');
+	Route::get('delete', 'PostController@deleteIndex');
+
+	//OLD ONE
+	Route::get('posts', 'PostController@index');
+	Route::post('post', 'PostController@post');
+	Route::delete('post/{id}', 'PostController@delete');	
+	
+
+
+
 	
 
 });
