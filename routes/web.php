@@ -47,10 +47,6 @@ Route::group(['prefix' => 'admin'], function(){
     })->name('admin.categories');
 
 
-/*
-	Route::get('users', function() {
-        return view('admin.users');
-    })->name('admin.users'); */
 
 });
 
@@ -66,23 +62,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
     Route::get('/logout', 'AdminLoginController@logout');
 
 	Route::get('users', 'UserController@index');
-	Route::get('posts', 'PostController@index');
-
-
-
-
-
-
-
-
-/*
- Route::get('posts', function () {
-        return view('posts', [
-            'posts' => Post::orderBy('created_at', 'asc')->get()
-        ]);
-    });
-
-*/
 
 	
 	Route::get('create', 'PostController@createIndex');

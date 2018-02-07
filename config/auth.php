@@ -77,8 +77,8 @@ return [
         ],
 
 		'admin-users' => [
-        'driver' => 'admin-user-provider',
-        'model' => App\User::class,
+        	'driver' => 'admin-user-provider',
+        	'model' => App\User::class,
     	],
 
         // 'users' => [
