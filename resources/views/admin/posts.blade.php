@@ -27,7 +27,7 @@
 
               
 
-          			<a href="create" class="btn btn-default">New Post</a>
+				<a href="create" class="btn btn-default">New Post</a>
                 
                 <section class="content-container">
                     <div class="content-category-container">
@@ -36,74 +36,59 @@
                             <a href="" class="content-header-category-link">More &#62;</a>
                         </header>
                         <div class="container">
-        <div class="col-sm-offset-2 col-sm-8">
+        					<div class="col-sm-offset-2 col-sm-8">
 
 
 
 
-            <!-- Current Tasks -->
-            @if (count($posts) > 0)
-                <div class="panel panel-default">
+            					<!-- Current Tasks -->
+            					@if (count($posts) > 0)
+                				<div class="panel panel-default">
                  
-                    <div class="panel-body">
-                        <table class="table table-striped task-table">
-                            <thead>
-                                <th>Title</th>	
-								<th>Description</th>
-                                <th>&nbsp;</th>
+                    				<div class="panel-body">
+                        				<table class="table table-striped task-table">
+                            				<thead>
+                                				<th>Title</th>	
+												<th>Description</th>
+                                				<th>&nbsp;</th>
 								
-                            </thead>
-                            <tbody>
-                                @foreach ($posts as $post)
-                                    <tr>
-                                        <td class="table-text"><div>{{ $post->title }}</div></td>
-										<td class="table-text"><div>{{ $post->desc }}</div></td>
+                            				</thead>
+                           					<tbody>
+                                			@foreach ($posts as $post)
+                                    		<tr>
+                                        			<td class="table-text"><div>{{ $post->title }}</div></td>
+													<td class="table-text"><div>{{ $post->desc }}</div></td>
 
+												 <!-- Task Update Button -->
+                                        		<td>
+                                        			<a href="{{ url('admin/posts/'.$post->id .'/edit') }}" type="submit" class="btn btn-primary">
+                                        		    	<i class="fa fa-btn fa-edit"></i>Edit
+                                        			</a>   
+                                        		</td>
 
+                                        		<!-- Task Delete Button -->
+                                        		<td>
+                                        		    <form action="{{ url('admin/post/'.$post->id) }}" method="POST">
+                                        		        {{ csrf_field() }}
+                                        		        {{ method_field('DELETE') }}
 
-										 <!-- Task Update Button -->
-                                        <td>
-                                          
-                                                <a href="{{ url('admin/posts/'.$post->id .'/edit') }}" type="submit" class="btn btn-primary">
-                                                    <i class="fa fa-btn fa-edit"></i>Edit
-                                                </a>
-                                           
-                                        </td>
-
-                                        <!-- Task Delete Button -->
-                                        <td>
-                                            <form action="{{ url('admin/post/'.$post->id) }}" method="POST">
-                                                {{ csrf_field() }}
-                                                {{ method_field('DELETE') }}
-
-                                                <button type="submit" class="btn btn-danger">
-                                                    <i class="fa fa-btn fa-trash"></i>Delete
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            @endif
-        </div>
-</div>
-
-
-
-                    </div>
-
-                
+                                        		        <button type="submit" class="btn btn-danger">
+                                        		            <i class="fa fa-btn fa-trash"></i>Delete
+                                        		        </button>
+                                        			    </form>
+                                        			</td>
+                                    			</tr>
+                               	 			@endforeach
+                           	 				</tbody>
+                       		 			</table>
+                    				</div>
+                				</div>
+            					@endif
+        					</div>
+						</div>
+					
+					</div>
 				</section>
-
-
-
-            </div>
-        </div>
-
-
-
+			</div>
 
 @endsection

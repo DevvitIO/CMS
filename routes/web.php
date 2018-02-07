@@ -67,8 +67,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
 	Route::get('create', 'PostController@createIndex');
 	Route::get('posts/{id}/edit', 'PostController@editIndex');
 
-	Route::get('posts', 'PostController@index');
-	Route::post('post', 'PostController@post');
+	Route::get('posts', 'PostController@index')->name('admin.posts');;
+	Route::post('post', 'PostController@post')->name('admin.post');;;
 	Route::delete('post/{id}', 'PostController@delete');	
 	Route::patch('post/{id}', 'PostController@update');
 	

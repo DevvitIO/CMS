@@ -17,9 +17,15 @@ class CreatePostsTable extends Migration
             $table->increments('id');
 			$table->string('title');
 			$table->text('text')->nullable($value = true);
-			$table->text('desc')->nullable($value = true);
             $table->timestamps();
+			$table->softDeletes();
+			
         });
+	
+		Schema::table('posts', function($table) {
+			$table->foreign('category_id')->references('id')->on('categories');	
+		});
+
     }
 
     /**

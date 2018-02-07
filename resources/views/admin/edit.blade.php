@@ -43,24 +43,19 @@
 						{{ method_field('PATCH') }}	
                         <!-- Task Name -->
                         <div class="form-group">
-                            <label for="task-name" class="col-sm-3 control-label">Title</label>
+                        	<label for="task-name" class="col-sm-3 control-label">Title</label>
 
                             <div class="col-sm-6">
                                 <input type="text" name="title" id="task-name" class="form-control" value="{{ $post['title'] }}">
                             </div>
 
 
-							 <label for="post-text" class="col-sm-3 control-label">Text</label>
+							<label for="post-text" class="col-sm-3 control-label">Text</label>
 
                             <div class="col-sm-6">
 								<textarea class="form-control" rows="5" id="post-text" name="text">{{ $post['text'] }}</textarea>
                             </div>
 
-							<label for="post-desc" class="col-sm-3 control-label">Description</label>
-
-                            <div class="col-sm-6">
-                                <input type="text" name="desc" id="post-desc" class="form-control" value="{{ $post['desc'] }}">
-                            </div>
 
                         </div>
 

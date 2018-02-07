@@ -44,28 +44,28 @@ class PostController extends Controller
                 ->withInput()
                 ->withErrors($validator);
         }
-        $post = new Post;
-        $post->title = $request->title;
+
+		$post = new Post;
+		
+		$post->title = $request->title;
 		$post->text = $request->text;
-		$post->desc = $request->desc;
-        $post->save();
-        return redirect('admin/posts');
+		$post->save();
+        return redirect()->route('admin.posts');
     }
 
 	public function delete($id){
 		Post::findOrFail($id)->delete();
-		return redirect('admin/posts');
+		return redirect()->route('admin.posts');
     }
 
 	public function update(Request $request, $id){
 		Post::where('id', $id)->update([
             "title" => $request->title,
             "text" => $request->text,
-            "desc" => $request->desc,
         ]);
 		
 
-		return redirect('admin/posts');	
+		return redirect()->route('admin.posts');	
 	}
 
 

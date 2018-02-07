@@ -25,7 +25,7 @@ class AddPostThumbnail extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function($table) {
+		Schema::table('posts', function($table) {
        		$table->dropColumn('thumbnail');
    	 	});
     }

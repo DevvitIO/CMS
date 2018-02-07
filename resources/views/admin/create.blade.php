@@ -38,16 +38,16 @@
                     <!-- Display Validation Errors -->
                     @include('common.errors')
 
-                    <!-- New Task Form -->
-                    <form action="{{ url('admin/post')}}" method="POST" class="form-horizontal">
+                    <!-- New Post Form -->
+                    <form action="{{ route('admin.post') }}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
 
-                        <!-- Task Name -->
+                        <!-- Post Name -->
                         <div class="form-group">
                             <label for="task-name" class="col-sm-3 control-label">Title</label>
 
                             <div class="col-sm-6">
-                                <input type="text" name="title" id="task-name" class="form-control" value="{{ old('task') }}">
+                                <input type="text" name="title" id="task-name" class="form-control" value="{{ old('post') }}">
                             </div>
 
 
@@ -57,11 +57,6 @@
 								<textarea class="form-control" rows="5" id="post-text" name="text"></textarea>
                             </div>
 
-							<label for="post-desc" class="col-sm-3 control-label">Description</label>
-
-                            <div class="col-sm-6">
-                                <input type="text" name="desc" id="post-desc" class="form-control" value="{{ old('task') }}">
-                            </div>
 
                         </div>
 
