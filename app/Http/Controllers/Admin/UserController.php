@@ -18,12 +18,12 @@ class UserController extends Controller
         return view('user.profile', ['user' => User::findOrFail($id)]);
     }
 
-	 /**
+    /**
      * Returns all users
      *
      * @return \Illuminate\View\View
      */
-	public function index()
+    public function index()
     {
         $users = User::all();
         return view('admin.users', compact('users') );

@@ -12,19 +12,19 @@ class CreatePostsTable extends Migration
      * @return void
      */
     public function up()
-	{
-		Schema::create('posts', function (Blueprint $table) {
-			$table->increments('id');
-			$table->string('title');
-			$table->text('text')->nullable($value = true);
-			$table->timestamps();
-			$table->softDeletes();
-			
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->text('text')->nullable($value = true);
+            $table->timestamps();
+            $table->softDeletes();
+
         });
-	
-		Schema::table('posts', function($table) {
-			$table->foreign('category_id')->references('id')->on('categories');	
-		});
+
+        Schema::table('posts', function($table) {
+            $table->foreign('category_id')->references('id')->on('categories');
+        });
 
     }
 

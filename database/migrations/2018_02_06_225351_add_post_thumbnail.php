@@ -11,12 +11,12 @@ class AddPostThumbnail extends Migration
      *
      * @return void
      */
-	public function up()
-	{
-		Schema::table('posts', function($table) {
-       		$table->text('thumbnail')->nullable($value = true);
-		});
-	}
+    public function up()
+    {
+        Schema::table('posts', function($table) {
+            $table->text('thumbnail')->nullable($value = true);
+        });
+    }
 
     /**
      * Reverse the migrations.
@@ -25,8 +25,8 @@ class AddPostThumbnail extends Migration
      */
     public function down()
     {
-		Schema::table('posts', function($table) {
-       		$table->dropColumn('thumbnail');
-   	 	});
+        Schema::table('posts', function($table) {
+            $table->dropColumn('thumbnail');
+        });
     }
 }

@@ -11,26 +11,26 @@ class AddIsAdminUser extends Migration
      *
      * @return void
      */
-   
-	public function up()
-	{
-	    Schema::table('users', function (Blueprint $table) {
-	        $table->boolean('admin')->default(0);
-	    });
-	}
 
-	 /**
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->boolean('admin')->default(0);
+        });
+    }
+
+    /**
      * Reverse the migrations.
      *
      * @return void
      */
-	public function down()
-	{
+    public function down()
+    {
 
-	    Schema::table('users', function (Blueprint $table) {
-	        $table->dropColumn('admin');
-	    });
-	}
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('admin');
+        });
+    }
 
 
 }
