@@ -14,7 +14,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./cateogires">Categories</a>
+                        <a href="./categories">Categories</a>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Archive</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="#">Page 1</a></li>

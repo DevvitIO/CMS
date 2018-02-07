@@ -42,6 +42,11 @@ Route::group(['prefix' => 'admin'], function(){
         return view('admin.index');
     })->name('admin.index');
 
+	Route::get('categories', function() {
+        return view('admin.categories');
+    })->name('admin.categories');
+
+
 /*
 	Route::get('users', function() {
         return view('admin.users');
