@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-	use SoftDeletes;
+    use SoftDeletes;
 
     /**
      * The attributes that should be mutated to dates.
@@ -15,9 +15,9 @@ class Post extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
-    
 
-	/**
+
+    /**
      * The table associated with the model.
      *
      * @var string

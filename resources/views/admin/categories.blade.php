@@ -26,9 +26,6 @@
         </nav>
 
 
-
-
-
         <section class="content-container">
             <div class="content-category-container">
                 <header class="content-header">
@@ -36,12 +33,6 @@
                     <a href="" class="content-header-category-link">More &#62;</a>
                 </header>
                 <div class="container">
-
-
-
-
-
-
 
                 </div>
             </div>
