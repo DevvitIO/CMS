@@ -9,9 +9,8 @@
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Posts</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
+							<li><a href="posts"><i class="fas fa-list-ul"></i> Posts</a></li>
                             <li><a href="create"><i class="fas fa-plus"></i> New Post </a></li>
-                            <li><a href="update"><i class="far fa-edit"></i> Update Post </a></li>
-                            <li><a href="delete"><i class="far fa-trash-alt"></i> Delete post </a></li>
                         </ul>
                     </li>
                     <li>

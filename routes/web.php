@@ -79,14 +79,14 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
 
 */
 
-	//NEW ONE
+	
 	Route::get('create', 'PostController@createIndex');
-	Route::get('delete', 'PostController@deleteIndex');
+	Route::get('posts/{id}/edit', 'PostController@editIndex');
 
-	//OLD ONE
 	Route::get('posts', 'PostController@index');
 	Route::post('post', 'PostController@post');
 	Route::delete('post/{id}', 'PostController@delete');	
+	Route::patch('post/{id}', 'PostController@update');
 	
 
 
