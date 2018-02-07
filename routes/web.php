@@ -35,14 +35,49 @@ Route::get('more', function () {
     return view('pub.more');
 })->name('pub.more');
 
+
 Route::group(['prefix' => 'admin'], function(){
 
     Route::get('dashboard', function() {
         return view('admin.index');
     })->name('admin.index');
 
+    Route::get('categories', function() {
+        return view('admin.categories');
+    })->name('admin.categories');
+
+
+
 });
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
+
+    Route::get('/', 'AdminController@index');
+
+
+
+    Route::get('users', 'UserController@index');
+
+
+    Route::get('create', 'PostController@createIndex');
+    Route::get('posts/{id}/edit', 'PostController@editIndex');
+
+    Route::get('posts', 'PostController@index')->name('admin.posts');;
+    Route::post('post', 'PostController@post')->name('admin.post');;;
+    Route::delete('post/{id}', 'PostController@delete');
+    Route::patch('post/{id}', 'PostController@update');
+
+
+
+
+
+
+});
+
+
+
