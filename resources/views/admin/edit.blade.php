@@ -34,14 +34,14 @@
                             <a href="" class="content-header-category-link">More &#62;</a>
                         </header>
                         
-                    <!-- Display Validation Errors -->
-                    @include('common.errors')
+                    	<!-- Display Validation Errors -->
+                    	@include('common.errors')
 
-                    <!-- New Task Form admin/post/{{ $post['id'] }} -->
-                    <form action="/admin/post/{{ $post->id }}"  method="POST" class="form-horizontal">	
-                        {{ csrf_field() }}
-						{{ method_field('PATCH') }}	
-                        <!-- Task Name -->
+                    	<!-- New Task Form admin/post/{{ $post['id'] }} -->
+						<form action="/admin/post/{{ $post->id }}"  method="POST" class="form-horizontal">	
+                        	{{ csrf_field() }}
+							{{ method_field('PATCH') }}	
+                        <!-- Post Name -->
                         <div class="form-group">
                         	<label for="task-name" class="col-sm-3 control-label">Title</label>
 
@@ -59,7 +59,7 @@
 
                         </div>
 
-                        <!-- Add Task Button -->
+                        <!-- Update Post Button -->
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-6">
                                 <button type="submit" class="btn btn-default">
