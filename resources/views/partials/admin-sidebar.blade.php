@@ -9,13 +9,12 @@
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Posts</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#"><i class="fas fa-plus"></i> New Post </a></li>
-                            <li><a href="#"><i class="far fa-edit"></i> Update Post </a></li>
-                            <li><a href="#"><i class="far fa-trash-alt"></i> Delete post </a></li>
+							<li><a href="posts"><i class="fas fa-list-ul"></i> Posts</a></li>
+                            <li><a href="create"><i class="fas fa-plus"></i> New Post </a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Categories</a>
+                        <a href="./categories">Categories</a>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Archive</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="#">Page 1</a></li>
@@ -25,17 +24,17 @@
                     </li>
                     
                     <li>
-                        <a href="#">Plugins</a>
+                        <a href="./plugins">Plugins</a>
                     </li>
 					<li>
-                        <a href="#">Users</a>
+                        <a href="./users">Users</a>
                     </li>
 					<li>
-                        <a href="#">Settings</a>
+                        <a href="./settings">Settings</a>
                     </li>
                 </ul>
 
                 <ul class="list-unstyled CTAs">
-                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to blog</a></li>
+                    <li><a href="/" class="article">Back to blog</a></li>
                 </ul>
 </nav>
