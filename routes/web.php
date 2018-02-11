@@ -76,7 +76,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
 	Route::get('create-category', 'CategoryController@createIndex');
 	Route::post('category', 'CategoryController@post')->name('admin.category');
 	Route::delete('category/{id}', 'CategoryController@delete');
-    Route::patch('category/{id}', 'CategoryController@update');
+	Route::patch('category/{id}', 'CategoryController@update');
 	Route::get('categories/{id}/edit', 'CategoryController@editIndex');	
 
 
