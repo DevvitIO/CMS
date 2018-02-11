@@ -14,7 +14,11 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./categories">Categories</a>
+						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Categories</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="./categories"><i class="fas fa-list-ul"></i> Categories</a></li>
+                            <li><a href="categories/create"><i class="fas fa-plus"></i> New Category</a></li>
+                        </ul>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Archive</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="#">Page 1</a></li>
