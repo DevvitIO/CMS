@@ -19,6 +19,14 @@ Route::get('trending', function () {
     return view('pub.trending');
 })->name('pub.trending');
 
+Route::get('blog', function() {
+    return view('blog.index');
+})->name('blog.index');
+
+Route::get('post/{id}', function($id) {
+    return view('blog.post');
+})->name('blog.post');
+
 Route::get('browse', function () {
     return view('pub.browse');
 })->name('pub.browse');
