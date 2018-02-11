@@ -64,20 +64,20 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
     Route::get('users', 'UserController@index');
 
 
-	Route::get('create', 'PostController@createIndex');
-	Route::get('posts/{id}/edit', 'PostController@editIndex');
+    Route::get('create', 'PostController@createIndex');
+    Route::get('posts/{id}/edit', 'PostController@editIndex');
 
-	Route::get('posts', 'PostController@index')->name('admin.posts');;
-	Route::post('post', 'PostController@post')->name('admin.post');;;
-	Route::delete('post/{id}', 'PostController@delete');
-	Route::patch('post/{id}', 'PostController@update');
+    Route::get('posts', 'PostController@index')->name('admin.posts');;
+    Route::post('post', 'PostController@post')->name('admin.post');;;
+    Route::delete('post/{id}', 'PostController@delete');
+    Route::patch('post/{id}', 'PostController@update');
 
-	Route::get('categories', 'CategoryController@index')->name('admin.categories');;
-	Route::get('create-category', 'CategoryController@createIndex');
-	Route::post('category', 'CategoryController@post')->name('admin.category');
-	Route::delete('category/{id}', 'CategoryController@delete');
-	Route::patch('category/{id}', 'CategoryController@update');
-	Route::get('categories/{id}/edit', 'CategoryController@editIndex');	
+    Route::get('categories', 'CategoryController@index')->name('admin.categories');;
+    Route::get('create-category', 'CategoryController@createIndex');
+    Route::post('category', 'CategoryController@post')->name('admin.category');
+    Route::delete('category/{id}', 'CategoryController@delete');
+    Route::patch('category/{id}', 'CategoryController@update');
+    Route::get('categories/{id}/edit', 'CategoryController@editIndex');
 
 
 
